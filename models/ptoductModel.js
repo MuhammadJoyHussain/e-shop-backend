@@ -12,11 +12,11 @@ const productSchema = mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        ref: 'User'
+        ref: 'User',
     },
     name: {
         type: String,
-        required: true
+        required: true,
     },
     image: {
         type: String,
@@ -24,37 +24,37 @@ const productSchema = mongoose.Schema({
     },
     brand: {
         type: String,
-        required: true
+        required: true,
     },
     category: {
         type: String,
-        required: true
+        required: true,
     },
     description: {
         type: String,
-        required: true
+        required: true,
     },
-    reviews: { reviewSchema },
+    reviews: [reviewSchema],
     rating: {
         type: Number,
         required: true,
-        defauld: 0
+        default: 0,
     },
     numReviews: {
         type: Number,
         required: true,
-        defauld: 0
+        default: 0,
     },
     price: {
         type: Number,
         required: true,
-        defauld: 0
+        default: 0,
     },
     countInStock: {
         type: Number,
         required: true,
-        defauld: 0
-    }
+        default: 0,
+    },
 }, {
     timestamps: true
 })
