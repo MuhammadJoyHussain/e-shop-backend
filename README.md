@@ -8,7 +8,7 @@ Also, when importing a file (not a package), be sure to add .js at the end or wi
 NODE_ENV = development
 PORT = 5000
 MONGO_URI = your mongodb uri
-JWT_SECRET = 'you can use whatever you want'
+JWT_SECRET = 'you can put whatever you want'
 PAYPAL_CLIENT_ID = your paypal client id
 ```
 
